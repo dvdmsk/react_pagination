@@ -36,7 +36,10 @@ export const App: React.FC = () => {
   };
 
   useEffect(() => {
-    setSearchParams({});
+    setSearchParams({
+      page: currentPage.toString(),
+      perPage: perPage.toString(),
+    });
   }, []);
   // searchParams.get
 
